@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './component/Card/Card';
 import Header from './component/Header/Header';
 import SideCart from './component/SideCart/SideCart';
 import SingleData from './component/SingleData/SingleData';
 
 const App = () => {
+ 
 
-
+const handleReadTime =(time)=>{
+const previousReadTime = JSON.parse(localStorage.getItem("readTimes"));
+if(previousReadTime){
+  const sum =previousReadTime + time;
+  localStorage.setItem("readTimes",sum);
+}
+else{
+localStorage.setItem("readTimes",time);
+}
+};
 
   return (
     <div>

@@ -23,8 +23,9 @@ const App = () => {
   };
 
   const handleBlogTitle = (blog) => {
-    const newBlogs = [...titles, blog];
-    setTitles(newBlogs);
+    console.log(blog);
+    // const newBlogs = [...titles, blog];
+    setTitles(blog);
   };
 
   return (

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const SideCart = ({ readTime ,titles}) => {
 
 let blogs = [];
-for(const blog of titles){
+for(const blog of titles){   
     blogs.push(blog);
 }
 
@@ -23,9 +23,7 @@ const [time,setTime] =useState(readTime);
                 <p className='text-xl mb-4'> Bookmarked Blogs </p>
                 <div>
                     <p className='bg-stone-100 rounded-md p-3'>
-                  {
-                     titles.title
-                    } 
+                  {blogs} 
                     </p>
                 </div>
             </div>

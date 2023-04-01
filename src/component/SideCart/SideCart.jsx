@@ -20,11 +20,13 @@ const [time,setTime] =useState(readTime);
                 <h2>Spend Time on Read: {time} min</h2>
             </div>
             <div>
-                <p className='text-xl'> Bookmarked Blogs </p>
+                <p className='text-xl mb-4'> Bookmarked Blogs </p>
                 <div>
-                    {
-                        blogs.map(singleBlog=>{})
-                    }
+                    <p className='bg-stone-100 rounded-md p-3'>
+                  {
+                     titles.title
+                    } 
+                    </p>
                 </div>
             </div>
 

@@ -54,7 +54,18 @@ const App = () => {
           <p>Ans: useState is a Hook in React that allows you to add state to a functional component. It returns an array with two elements: the current state value and a function to update the state value.The process of using useState involves importing the Hook, declaring a state variable and its initial value, using the state variable and update function in your component, and allowing React to re-render the component when the state value is updated.</p>
         </div>
         <br />
-
+        <div>
+          <p>3. How does React work?</p>
+          <p>Ans: React is a JavaScript library for building user interfaces. It works by allowing you to create reusable UI components using JavaScript. When a React component is rendered, it generates a virtual representation of the UI called the Virtual DOM. React compares the current Virtual DOM with the previous Virtual DOM to determine which parts of the UI need to be updated, and updates only those parts. React provides tools for state management, event handling, and lifecycle management. Overall, React simplifies the process of building dynamic, interactive user interfaces in JavaScript.</p>
+        </div>
+        <br />
+        <div>
+          <p>4. What does useEffect do except data load?</p>
+          <p>Ans: Updating document title, useEffect update the title of the document when a component mounts or updates.
+            Subscribing to events, useEffect to subscribe to events, such as mouse clicks or keyboard presses, and perform some action when the event occurs, useful for adding interactivity to your application.
+            Managing animations, useEffect to manage animations in your application, such as starting or stopping an animation when a component mounts or updates.
+            Cleaning up resources, useEffect to clean up resources, such as removing event listeners or cancelling network requests, when a component unmounts or updates. </p>
+        </div>
 
       </div>
 

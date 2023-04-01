@@ -6,15 +6,19 @@ import SingleData from './component/SingleData/SingleData';
 
 const App = () => {
  
+  const [readTime,setReadTime]=useState("");
 
 const handleReadTime =(time)=>{
 const previousReadTime = JSON.parse(localStorage.getItem("readTimes"));
 if(previousReadTime){
   const sum =previousReadTime + time;
   localStorage.setItem("readTimes",sum);
+  setReadTime(sum);
 }
 else{
 localStorage.setItem("readTimes",time);
+setReadTime(time);
+
 }
 };
 
@@ -28,7 +32,7 @@ localStorage.setItem("readTimes",time);
       <Card handleReadTime={handleReadTime}></Card>
       </div>
       <div className="sideCart w-[30%] bg-slate-200">
-        <SideCart></SideCart>
+        <SideCart readTime={readTime}></SideCart>
       </div>
     </div>
      

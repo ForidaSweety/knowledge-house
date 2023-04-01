@@ -33,7 +33,7 @@ const SingleData = ({singleValue ,handleReadTime}) => {
                         <h2 className="card-title mt-3">{singleValue.title}</h2>
 
                         <div className='mt-5'>
-                            <a onClick={()=>handleReadTime(singleValue.readTime)} className="">Mark as read</a>
+                            <a onClick={()=>handleReadTime(singleValue.readTime)} className="link">Mark as read</a>
                         </div>
                     </div>
                 </div>

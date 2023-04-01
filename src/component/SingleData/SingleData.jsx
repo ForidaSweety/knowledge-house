@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookBookmark } from '@fortawesome/free-solid-svg-icons'
 
-const SingleData = ({singleValue ,handleReadTime}) => {
+const SingleData = ({singleValue ,handleReadTime,handleBlogTitle}) => {
     // console.log(props.singleValue);
     // const { imge, date, author, name, readTime, spendTime, title } = props.singleValue;
 
@@ -27,7 +27,7 @@ const SingleData = ({singleValue ,handleReadTime}) => {
                             </div>
                             <div className='inline-flex '>
                                 <p>{singleValue.readTime} min read</p>
-                                <button className="btn btn-ghost btn-xs "><FontAwesomeIcon icon={faBookBookmark} /></button>
+                                <button onClick={()=>handleBlogTitle(singleValue.title)} className="btn btn-ghost btn-xs "><FontAwesomeIcon icon={faBookBookmark} /></button>
                             </div>
                         </div>
                         <h2 className="card-title mt-3">{singleValue.title}</h2>

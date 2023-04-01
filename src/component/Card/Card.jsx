@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleData from '../SingleData/SingleData';
 
-const Card = ({handleReadTime}) => {
+const Card = ({handleReadTime,handleBlogTitle}) => {
     const [datas, setDatas] = useState([]);
 
     useEffect(() => {
@@ -16,6 +16,7 @@ const Card = ({handleReadTime}) => {
                 {
                     datas.map(singleValue => 
                     <SingleData handleReadTime={handleReadTime}
+                    handleBlogTitle={handleBlogTitle}
                     key={singleValue.id} 
                     singleValue ={singleValue}></SingleData> )
                      }

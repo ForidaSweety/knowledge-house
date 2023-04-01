@@ -37,7 +37,8 @@ const SingleData = ({singleValue ,handleReadTime,handleBlogTitle}) => {
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div> 
+            
         </div>
     );
 };

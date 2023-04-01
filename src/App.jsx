@@ -40,7 +40,23 @@ const App = () => {
           <SideCart readTime={readTime} titles={titles} ></SideCart>
         </div>
       </div>
+      <div className='m-8 bg-orange-50 p-5'>
+        <div>
+          <p>1. Difference between props and state?</p>
+          <p>Ans: Props used to pass data from a parent component to a child component. Props are immutable, which means they cannot be changed from inside the component that receives them. A component can receive props and use them to render dynamic content, but it cannot modify them.
+            <br />
+            State used to manage data that is internal to a component. State is mutable, which means it can be changed from within the component. When the state of a component changes, React will re-render the component to reflect the updated state.
+          </p>
+        </div>
+        <br />
+        <div>
+          <p>2. How does useState work?</p>
+          <p>Ans: useState is a Hook in React that allows you to add state to a functional component. It returns an array with two elements: the current state value and a function to update the state value.The process of using useState involves importing the Hook, declaring a state variable and its initial value, using the state variable and update function in your component, and allowing React to re-render the component when the state value is updated.</p>
+        </div>
+        <br />
 
+
+      </div>
 
     </div>
   );

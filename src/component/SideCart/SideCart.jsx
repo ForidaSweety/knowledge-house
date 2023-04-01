@@ -2,8 +2,12 @@ import React, { useEffect, useState } from 'react';
 
 const SideCart = ({ readTime ,titles}) => {
 
-const [time,setTime] =useState(readTime);
+let blogs = [];
+for(const blog of titles){
+    blogs.push(blog);
+}
 
+const [time,setTime] =useState(readTime);
 
     useEffect(() => {
         const getReadTime = localStorage.getItem("readTimes")
@@ -18,7 +22,9 @@ const [time,setTime] =useState(readTime);
             <div>
                 <p className='text-xl'> Bookmarked Blogs </p>
                 <div>
-                    <p>{titles.title}</p>
+                    {
+                        blogs.map(singleBlog=>{})
+                    }
                 </div>
             </div>
 

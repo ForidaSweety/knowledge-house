@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookBookmark } from '@fortawesome/free-solid-svg-icons'
 
-const SingleData = ({singleValue}) => {
+const SingleData = ({singleValue }) => {
     // console.log(props.singleValue);
     // const { imge, date, author, name, readTime, spendTime, title } = props.singleValue;
 
@@ -20,13 +20,21 @@ const SingleData = ({singleValue}) => {
                                     <img className='rounded-full h-10 w-10' src={singleValue.author} alt="" />
                                     
                                 </div>
-                               
+                                <div>
+                                    <h4>{singleValue.name}</h4>
+                                    <p>{singleValue.date}</p>
+                                </div>
                             </div>
-                            
+                            <div className='inline-flex '>
+                                <p>{singleValue.readTime} min read</p>
+                                <button className="btn btn-ghost btn-xs "><FontAwesomeIcon icon={faBookBookmark} /></button>
+                            </div>
                         </div>
                         <h2 className="card-title mt-3">{singleValue.title}</h2>
 
-                      
+                        <div className='mt-5'>
+                            <a className="">Mark as read</a>
+                        </div>
                     </div>
                 </div>
             </div>  

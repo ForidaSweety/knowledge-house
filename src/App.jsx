@@ -6,6 +6,8 @@ import SingleData from './component/SingleData/SingleData';
 
 const App = () => {
 
+
+
   return (
     <div>
      <div>
